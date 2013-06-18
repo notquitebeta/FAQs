@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+{% include header.html %}
+{% include navigation.html %}
+<body>
+  <div id="main">
+    <header>
+      <h2> {{ page.title }} </h2>
+    </header>
+
+      {% if page.mail %}
+      <div class="contact">
+        For help, contact: <a href="mailto:{{ page.mail }}">{{ page.mail }}</a>
+      </div>
+      {% endif %}
+
+      {{ content }}
+  </div>
+{% include footer.html %}
+</body>
+</html>
