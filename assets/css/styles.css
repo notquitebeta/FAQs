@@ -71,8 +71,10 @@ html, body {
   padding:5px;
 }
 
-.brand {
-  text-align: center;
+.brand{
+  padding-left: 50px;
+  padding:50px;
+ /* text-align: center;*/
 }
 
 
